@@ -1,0 +1,106 @@
+<html>
+  <head>
+  <script src="d3.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/flat-ui.css">
+  <meta charset="UTF-8">
+  <title>Time - OnTime</title>
+
+<style>
+
+body {
+  background: #fff;
+}
+
+svg{
+  stroke: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+#rim {
+  fill: blue;
+  stroke: #999;
+  stroke-width: 6px;
+}
+.outerCircle {
+  stroke-width:1;
+  fill:none;
+}
+.second-hand{
+  stroke-width:2;
+}
+.minute-hand{
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke: #333333;
+}
+
+.hour-hand{
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke: #333333;
+}
+
+.hands-cover{
+  stroke-width:2;
+  fill:#fff;
+}
+
+.second-tick{
+  stroke-width:0;
+  fill:#000;  
+}
+
+.hour-tick{
+  stroke-width:5;
+  stroke:#333333;
+}
+
+.second-label{
+  font-size: 12px;
+}
+
+.hour-label{
+  font-size: 20px;
+}
+
+.clock-hands-arrivals {
+  stroke-width:5;
+  stroke-linecap:round;
+}
+
+#lines {
+  display: inline-block;
+}
+
+#settings {
+  position: absolute;
+  top:4px;
+  right:10px;
+}
+
+#settings span.fui-gear {
+  font-size: 30px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+</style>
+  </head>
+
+  <body>
+    <div class="container">
+      <script src="time.js"></script>
+      <script src="clock.js"></script>
+
+      <div id='lines'></div>
+
+      <a id="settings" href="menu.html"><span class="fui-gear"></span></a>
+
+    </div>
+  </body>
+<script type="text/javascript" src="js/underscore-min.js"></script>
+
+</html>

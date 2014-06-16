@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Info - OnTime</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  	<link rel="stylesheet" href="css/flat-ui.css">
+	<style type="text/css">
+		.container { 
+			margin: 20 0;
+			width: 500px;
+		}
+		.container p {
+			line-height: 120%;
+		}
+		img {
+			width: 300px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 30px;
+		}
+		#about .time, #about .settings {
+	      position: absolute;
+	      right:10px;
+	      top:4px;
+	    }
+	    #about .settings{ right:45px;}
+	    #about .time span, #about .settings span {
+			font-size: 30px
+	    }
+	</style>
+</head>
+<body>
+	<div class="container" id="about">
+		<img src="logo.png" alt="Logo OnTime SF">
+		<h4>Concept</h4>
+		<p>The idea of this extension is to display the next arrivals of your prefered map directly on a clock.</p>
+		<p>The minute of the 3 next arrivals, in a range of 30 minutes, are displayed. To help visualize the first arrival, the 2nd and 3rd are more displayed with more transparency.
+		</p>
+		<h4>About</h4>
+		<p>This Chrome Extension is based on <a href="http://api-portal.anypoint.mulesoft.com/nextbus/api/nextbus-api/support/legal" alt="Nextbus">Nextbus Data</a>, center on the city of San Francisco.<br/>
+		It's a simple experiment; any suggestion regarding the service / usage / concept is welcome!</p>
+		<p>The source code is available <a href="#">here</a>. Feel free to modify it!</p>
+		<a class="time" href="time.html"><span class="fui-time"></span></a>
+      	<a class="settings" href="menu.html"><span class="fui-gear"></span></a>
+
+
+	</div>
+	
+</body>
+</html>
