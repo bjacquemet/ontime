@@ -2,23 +2,23 @@
   "manifest_version": 2,
 
   "name": "On time",
-  "description": "Your next transit arrivals on your clock",
+  "description": "The next transit arrivals on your clock",
   "version": "1.0",
   "permissions": ["storage", "http://webservices.nextbus.com/"],
   "background":{
     "script":[
-        "time.js",
-        "menu.js",
-        "clock.js"
+        "js/time.js",
+        "js/menu.js",
+        "js/clock.js"
     ]
   },
   "icons": { 
-    "16": "logo-16.png",
-    "48": "logo-48.png",
-    "128": "logo-128.png" 
+    "16": "img/logo-16.png",
+    "48": "img/logo-48.png",
+    "128": "img/logo-128.png" 
   },
   "browser_action": {
-    "default_icon": "favico.png",
+    "default_icon": "img/favico.png",
     "default_popup": "time.html"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"

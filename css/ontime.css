@@ -1,0 +1,151 @@
+body {
+  min-width: 400px;
+}
+
+/* Menu */
+
+.container {
+  margin-bottom: 15px;
+}
+#submit {
+  width: 100%;
+  display:block;
+  visibility: hidden;
+}
+.form-control {
+  width: auto;
+  display: inline;
+  width: 100%;
+}
+#submit, .form-control {
+  margin-top: 4px;
+}
+#userInfo {
+  width: 100%;
+  font-size: 18px;
+  margin-top: 15px;
+}
+tbody td {
+  padding: 5px;
+  border-top: 1px solid black;
+}
+tbody td:nth-child(even), thead th:nth-child(even){
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+th {
+  text-align: center;
+  padding: 5px;
+}
+.time, .info {
+  position: absolute;
+  right:10px;
+  top:4px;
+}
+.info {
+  font-style: italic;
+  font-size: 30px;
+  right: 50px;
+}
+.time span.fui-time {
+  font-size: 30px;
+}
+
+/* info */
+
+.container#about { 
+  margin: 20 0;
+  width: 500px;
+}
+.container#about p {
+  line-height: 120%;
+}
+img {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+#about .time, #about .settings {
+    position: absolute;
+    right:10px;
+    top:4px;
+}
+#about .settings{ 
+  right:45px;
+}
+#about .time span, #about .settings span {
+  font-size: 30px
+}
+
+/* time */
+p {
+  margin-bottom: 0px;
+}
+
+svg{
+  stroke: #000;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.outerCircle {
+  stroke-width:1;
+  fill:none;
+}
+.second-hand{
+  stroke-width:2;
+}
+.minute-hand{
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke: #333333;
+}
+
+.hour-hand{
+  stroke-width:7;
+  stroke-linecap:round;
+  stroke: #333333;
+}
+
+.hands-cover{
+  stroke-width:2;
+  fill:#fff;
+}
+
+.second-tick{
+  stroke-width:0;
+  fill:#000;  
+}
+
+.hour-tick{
+  stroke-width:5;
+  stroke:#333333;
+}
+
+.second-label{
+  font-size: 12px;
+}
+
+.hour-label{
+  font-size: 20px;
+}
+
+.clock-hands-arrivals {
+  stroke-width:5;
+  stroke-linecap:round;
+}
+
+#lines {
+  display: inline-block;
+}
+
+.settings {
+  position: absolute;
+  top:4px;
+  right:10px;
+}
+
+.settings span.fui-gear {
+  font-size: 30px;
+}
